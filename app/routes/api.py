@@ -15,7 +15,7 @@ def signup():
         newUser = User(
             username = data['username'],
             email = data['email'],
-            password = data['passsword']
+            password = data['password']
         )
         # save in database
         db.add(newUser)
@@ -27,10 +27,10 @@ def signup():
         db.rollback()
         return jsonify(message = 'Signup failed'), 500
 
-    return jsonify(id = newUser.id)
     session.clear()
     session['user_id'] = newUser.id
     session['loggedIn'] = True
+    return jsonify(id = newUser.id)
 
 @bp.route('/users/logout', methods=['POST'])
 def logout():
