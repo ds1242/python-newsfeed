@@ -1,2 +1,2 @@
 # Just Tech News in Python
-Updating readme
+Updating readme to hopefully deploy to heroku
