@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS python_news_db;
+DROP DATABASE IF EXISTS api_exercise;
 
-CREATE DATABASE python_news_db;
+CREATE DATABASE api_exercise;
 
